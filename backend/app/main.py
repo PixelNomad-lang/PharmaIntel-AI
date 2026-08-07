@@ -1,19 +1,21 @@
 from fastapi import FastAPI
+from app.core.config import settings
 
 app = FastAPI(
-    title="PharmaIntel AI",
-    version="0.1.0",
-    description="AI Powered Pharma Sales Intelligence Platform"
+    title=settings.app_name,
+    version=settings.app_version,
+    debug=settings.debug,
 )
 
 @app.get("/")
 def root():
     return {
-        "message": "Welcome to PharmaIntel AI"
+        "message": f"Welcome to {settings.app_name}"
     }
 
 @app.get("/health")
 def health():
     return {
-        "status": "healthy"
+        "status": "healthy",
+        "version": settings.app_version
     }
