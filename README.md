@@ -1,5 +1,5 @@
 # PharmaIntel-AI
-AI-Powered Sales Intelligence for Laboratory &amp; Pharma
+AI-Powered Sales Intelligence for Laboratory &amp; Pharma , AI
 <div align="center">
 
 # 🧪 PharmaIntel-AI
